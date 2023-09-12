@@ -10,7 +10,7 @@ export default function About() {
           <Image
             src="/profile_pic.png"
             alt="Atharva Patil"
-            className="rounded-md dark:invert"
+            className="rounded-md"
             width={500}
             height={500}
             priority

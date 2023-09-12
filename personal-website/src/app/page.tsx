@@ -14,7 +14,7 @@ export default function Home() {
         <Image
           src="/sf2.jpeg"
           alt="sf"
-          className="rounded-md dark:invert"
+          className="rounded-md"
           width={500}
           height={400}
           priority
