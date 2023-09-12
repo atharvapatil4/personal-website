@@ -1,5 +1,7 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import Image from "next/image";
 import CurrentTime from "./components/time";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,7 +14,7 @@ export default function Home() {
         <Image
           src="/sf2.jpeg"
           alt="Vercel Logo"
-          className="dark:invert"
+          className="rounded-md dark:invert"
           width={500}
           height={400}
           priority
@@ -22,7 +24,10 @@ export default function Home() {
         <div className="text-center">
           <CurrentTime />
           <br></br>
-          <a>about</a> //
+          <Link href="/about" className="text-blue-500 hover:underline">
+            about
+          </Link>{" "}
+          //
           <a> reader</a> //
           <a> blog</a> //
           <a> contact</a>
