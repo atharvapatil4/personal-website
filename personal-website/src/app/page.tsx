@@ -1,5 +1,6 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import Image from "next/image";
-import CurrentTime from "./components/time";
+import CurrentTime from "./components/Time";
 
 export default function Home() {
   return (
