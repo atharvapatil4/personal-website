@@ -7,7 +7,7 @@ const CurrentTime = () => {
   const fetchTime = async () => {
     try {
       const response = await fetch(
-        "https://worldtimeapi.org/api/timezone/America/Los_Angeles",
+        "https://worldtimeapi.org/api/timezone/America/Los_Angeles"
       );
       const data = await response.json();
       const time = new Date(data.utc_datetime);
@@ -30,11 +30,7 @@ const CurrentTime = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return (
-    <a href="https://24timezones.com/San-Francisco/time" className="italic">
-      TIME IN SAN FRANCISCO - {currentTime} PST
-    </a>
-  );
+  return <a className="italic">TIME IN SAN FRANCISCO - {currentTime} PST</a>;
 };
 
 export default CurrentTime;

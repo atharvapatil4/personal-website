@@ -24,11 +24,14 @@ export default function Home() {
         <div className="text-center">
           <CurrentTime />
           <br></br>
-          <Link href="/about" className="text-blue-500 hover:underline">
+          <Link href="/about" className=" hover:underline">
             about
-          </Link>{" "}
-          //
-          <a> reader</a> //
+          </Link>
+          {" // "}
+          <Link href="/reader" className=" hover:underline">
+            reader
+          </Link>
+          {" // "}
           <a> blog</a> //
           <a> contact</a>
         </div>
