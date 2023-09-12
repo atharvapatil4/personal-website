@@ -95,7 +95,7 @@ export default function Reader() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              [08/29/23] Xi's Age of Stagnation
+              [08/29/23] Xi&apos;s Age of Stagnation
             </Link>
           </li>
           <li>
