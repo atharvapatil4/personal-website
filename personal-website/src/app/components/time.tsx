@@ -30,7 +30,7 @@ const CurrentTime = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return <a className="italic">TIME IN SAN FRANCISCO - {currentTime} PST</a>;
+  return <a className="italic">TIME IN SAN FRANCISCO – {currentTime} PST</a>;
 };
 
 export default CurrentTime;

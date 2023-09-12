@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -17,6 +18,7 @@ export default function About() {
         </div>
 
         <div className="text-center">
+          <br></br>
           <h1>
             My name is Atharva Patil and I currently work on the Core
             Infrastructure team at Hive AI in San Francisco. My current
@@ -27,36 +29,53 @@ export default function About() {
           <br />
           <h1>
             In my free time, I like to read{" "}
-            <a
-              className="text-blue-500 hover:underline"
-              href="https://www.goodreads.com/user/show/127860151-atharva-patil"
-            >
+            <a className="text-blue-500 hover:underline" href="/reader">
               articles
             </a>
-            ,{" "}
+            {" + "}
             <a
               className="text-blue-500 hover:underline"
               href="https://www.goodreads.com/user/show/127860151-atharva-patil"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               books
+            </a>
+            , listen to{" "}
+            <a
+              className="text-blue-500 hover:underline"
+              href="https://open.spotify.com/user/22wtxfaxf5obyqlpeo4upxcey"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              music
             </a>
             , and watch{" "}
             <a
               className="text-blue-500 hover:underline"
               href="https://letterboxd.com/atharvapatil/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               movies
             </a>
             .
           </h1>
-          <div id="my-button" className="text-center mt-4">
+          <br></br>
+          <h1 className="font-semibold">
+            {" "}
+            <Link href="/" className=" text-blue-500 hover:underline italic">
+              Back to Home
+            </Link>
+          </h1>
+          {/* <div id="my-button" className="text-center mt-4">
             <a
               href="/"
-              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 italic"
             >
               Back to Home
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </main>
