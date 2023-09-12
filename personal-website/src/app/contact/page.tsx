@@ -8,7 +8,7 @@ export default function Reader() {
         <p>Feel free to contact me for any opportunities or questions.</p>
         <br></br>
         <p>e-mail</p>
-        <p className="italic">atharvapatil2000@gmail.com</p>
+        <p className="italic">atharvapatil2000 [at] gmail.com</p>
         <br></br>
         <div className="flex justify-center">
           <div className="mr-8">
