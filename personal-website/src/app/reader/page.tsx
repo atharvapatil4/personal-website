@@ -44,6 +44,16 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://petewarden.com/2023/09/10/why-nvidias-ai-supremacy-is-only-temporary/"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [09/13/23] Why Nvidia’s AI Supremacy is Only Temporary
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://discord.com/blog/how-discord-stores-trillions-of-messages#:~:text=We%20stored%20our%20messages%20in,nodes%20with%20trillions%20of%20messages"
               className=" hover:underline"
               rel="noopener noreferrer"
