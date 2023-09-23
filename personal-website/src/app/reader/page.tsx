@@ -44,6 +44,39 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://blog.cloudflare.com/counting-things-a-lot-of-different-things/#fn4"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [09/22/23] How Cloudflare built rate limiting capable of scaling
+              to millions of domains
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.primevideotech.com/video-streaming/scaling-up-the-prime-video-audio-video-monitoring-service-and-reducing-costs-by-90"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [09/22/23] Scaling up the Prime Video audio/video monitoring
+              service and reducing costs by 90%
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://github.blog/2021-04-05-how-we-scaled-github-api-sharded-replicated-rate-limiter-redis/"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [09/21/23] Scaling the GitHub API with a sharded, replicated rate
+              limiter in Redis
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://petewarden.com/2023/09/10/why-nvidias-ai-supremacy-is-only-temporary/"
               className=" hover:underline"
               rel="noopener noreferrer"
@@ -79,7 +112,7 @@ export default function Reader() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              [08/29/23] Reducing Cold Start time for LLM Inference
+              [08/29/23] Reducing Cold Start time for LLM Inference at Scale.ai
             </Link>
           </li>
         </ul>
