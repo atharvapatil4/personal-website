@@ -120,6 +120,60 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://www.wsj.com/economy/consumers/americans-are-still-spending-like-theres-no-tomorrow-6a1d307?st=86bpxhxvf7bfcv2&reflink=desktopwebshare_permalink"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [10/09/23] Americans Are Still Spending Like There&apos;s No
+              Tomorrow
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://archive.ph/t6Yt5"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [10/09/23] The Free-Money Experiment Is Over
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://archive.ph/VwKtn"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [10/09/23] Corporate America Is Ignoring Jay Powell and Bingeing
+              on Debt
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://archive.ph/c7YEO"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [10/09/23] The 5% Bond Market Means Pain Is Heading
+              Everyone&apos;s Way
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.wsj.com/us-news/law/the-hedge-fund-that-made-a-killing-betting-against-lina-khan-d5b395b1"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [09/26/23] The Hedge Fund That Made a Killing Betting Against Lina
+              Khan
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://www.wsj.com/lifestyle/careers/youve-heard-of-quiet-quitting-now-companies-are-quiet-cutting-ba2c326d?st=e2rccbdrtgnu7lx&reflink=desktopwebshare_permalink"
               className=" hover:underline"
               rel="noopener noreferrer"
