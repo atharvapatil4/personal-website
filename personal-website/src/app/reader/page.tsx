@@ -183,8 +183,51 @@ export default function Reader() {
             </Link>
           </li>
         </ul>
-        <h1 className="font-semibold">Foreign Affairs</h1>
+        <h1 className="font-semibold">Global</h1>
         <ul className="text-xs list-disc pl-4">
+          <li>
+            <Link
+              href="https://www.wsj.com/economy/global/lessons-from-the-1970s-energy-crisis-can-help-prevent-the-next-one-59a13d30?st=y1twy1xrzgmmwhg&reflink=desktopwebshare_permalink"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [10/12/23] Lessons from the 1970s Energy Crisis Can Help Prevent
+              the Next One
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.wsj.com/economy/global/what-the-west-loses-by-trading-with-dictatorships-591c6a0f?st=083vyg93s58a3jf&reflink=desktopwebshare_permalink"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [10/12/23] What the West Loses by Trading With Dictatorships
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://web.archive.org/web/20231010200945/https://www.economist.com/leaders/2023/02/02/the-bank-of-japan-should-stop-defending-its-cap-on-bond-yields"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [10/12/23] The Bank of Japan should stop defending its cap on bond
+              yields
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://web.archive.org/web/20231011044826/https://www.economist.com/leaders/2023/10/04/rising-bond-yields-are-exposing-fiscal-fantasy-in-europe"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [10/12/23] Rising bond yields are exposing fiscal fantasy in
+              Europe
+            </Link>
+          </li>
           <li>
             <Link
               href="https://www.foreignaffairs.com/china/xi-jinping-age-stagnation"
@@ -203,6 +246,30 @@ export default function Reader() {
               target="_blank"
             >
               [08/29/23] Germany is Losing its Mojo
+            </Link>
+          </li>
+        </ul>
+        <h1 className="font-semibold">Lectures</h1>
+        <ul className="text-xs list-disc pl-4">
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=7PdJ9TAdTdA&t=4894s"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [10/11/23] Noam Chomsky on Modern-Day American Imperalism: Middle
+              East and Beyond
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=w_X5czMVKT8"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [10/11/23] Noam Chomsky on Power and Ideology
             </Link>
           </li>
         </ul>
