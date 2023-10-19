@@ -187,6 +187,26 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://www.wsj.com/world/china/dont-rule-out-a-financial-crisis-in-china-ed048ef9?st=2oe5pa8rf3pqx5l&reflink=desktopwebshare_permalink"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [10/19/23] A Financial Crisis in China Is No Longer Unthinkable 
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://apnews.com/article/china-debt-banking-loans-financial-developing-countries-collapse-8df6f9fac3e1e758d0e6d8d5dfbd3ed6"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [10/19/23] China&apos;s loans pushing world&apos;s poorest countries to brink of collapse
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://www.wsj.com/economy/global/lessons-from-the-1970s-energy-crisis-can-help-prevent-the-next-one-59a13d30?st=y1twy1xrzgmmwhg&reflink=desktopwebshare_permalink"
               className=" hover:underline"
               rel="noopener noreferrer"
@@ -230,7 +250,7 @@ export default function Reader() {
           </li>
           <li>
             <Link
-              href="https://www.foreignaffairs.com/china/xi-jinping-age-stagnation"
+              href="https://archive.ph/20231015040234/https://www.foreignaffairs.com/china/xi-jinping-age-stagnation"
               className=" hover:underline"
               rel="noopener noreferrer"
               target="_blank"
@@ -270,6 +290,16 @@ export default function Reader() {
               target="_blank"
             >
               [10/11/23] Noam Chomsky on Power and Ideology
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=3dtqt0bXb4Y"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [10/09/23] Yale ENGL 291: Thomas Pynchon, The Crying of Lot 49
             </Link>
           </li>
         </ul>
