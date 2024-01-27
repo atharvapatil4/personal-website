@@ -33,7 +33,9 @@ export default function Home() {
             reader
           </Link>
           {" // "}
-          <a> blog</a>
+          <Link href="/blog" className="text-blue-500 hover:underline">
+            blog
+          </Link>
           {" // "}
           <Link href="/contact" className="text-blue-500 hover:underline">
             contact

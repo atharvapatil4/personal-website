@@ -120,6 +120,28 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://www.wsj.com/economy/central-banking/what-to-watch-in-fridays-spending-report-a-last-look-at-inflation-before-the-fed-meeting-353665d9?st=0mv2hx1nruvdxvv&reflink=desktopwebshare_permalink"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [01/26/24] Cooler Inflation Keeps Door Open for Rate Cuts This
+              Year
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://archive.is/20240121115013/https://www.ft.com/content/20041cec-a83f-4f41-8cf3-b40d3464c922#selection-1529.0-1529.59"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [01/22/24] Companies rush to bond market in record $150bn debt
+              splurge
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://www.wsj.com/economy/consumers/americans-are-still-spending-like-theres-no-tomorrow-6a1d307?st=86bpxhxvf7bfcv2&reflink=desktopwebshare_permalink"
               className=" hover:underline"
               rel="noopener noreferrer"
@@ -192,7 +214,7 @@ export default function Reader() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              [10/19/23] A Financial Crisis in China Is No Longer Unthinkable 
+              [10/19/23] A Financial Crisis in China Is No Longer Unthinkable
             </Link>
           </li>
           <li>
@@ -202,7 +224,8 @@ export default function Reader() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              [10/19/23] China&apos;s loans pushing world&apos;s poorest countries to brink of collapse
+              [10/19/23] China&apos;s loans pushing world&apos;s poorest
+              countries to brink of collapse
             </Link>
           </li>
           <li>
