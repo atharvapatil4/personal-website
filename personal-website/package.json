@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node scripts/generateFileList.js && next dev",
+    "build": "node scripts/generateFileList.js && next build",
+    "start": "node scripts/generateFileList.js && next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -17,6 +17,8 @@
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "next": "13.4.19",
+    "next-mdx-remote": "^4.4.1",
+    "nextjs-cors": "^2.2.0",
     "postcss": "8.4.29",
     "react": "18.2.0",
     "react-dom": "18.2.0",
