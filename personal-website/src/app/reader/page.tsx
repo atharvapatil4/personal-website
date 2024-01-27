@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Reader() {
   return (
-    <main className="flex min-h-screen p-4 bg-gradient-radial">
+    <main className="flex justify-center min-h-screen p-4 bg-gradient-radial">
       <div className="flex flex-col">
         <h1 className="font-semibold">Papers</h1>
         <ul className="text-xs list-disc pl-4">
@@ -327,7 +327,7 @@ export default function Reader() {
           </li>
         </ul>
         <br></br>
-        <h1 className="font-semibold">
+        <h1 className="font-semibold text-center">
           {" "}
           <Link href="/" className=" text-blue-500 hover:underline italic">
             Back to Home

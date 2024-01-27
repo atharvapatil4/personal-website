@@ -8,7 +8,7 @@ export interface BlogPostSchema {
 
 const PostPreview = (props: BlogPostSchema) => {
   return (
-    <div className="py-2">
+    <div className="">
       <p className="text-sm text-slate-400">{props.frontMatter.date}</p>
 
       <Link href={`/blog/${props.slug}`}>

@@ -26,6 +26,7 @@ export async function GET(
         content: matterResult.content,
         title: matterResult.data.title,
         date: matterResult.data.date,
+        lastEdited: matterResult.data.lastEdited,
         description: matterResult.data.description,
         readingLength: readingLength,
       }),

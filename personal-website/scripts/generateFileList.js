@@ -5,6 +5,15 @@ const path = require("path");
 const directoryPath = path.join(process.cwd(), "public", "articles");
 const outputFilePath = path.join(process.cwd(), "fileList.json");
 
+function formatDate(dateString) {
+  const date = new Date(dateString);
+  const month = String(date.getMonth() + 1).padStart(2, "0"); // Adds leading zero
+  const day = String(date.getDate()).padStart(2, "0"); // Adds leading zero
+  const year = date.getFullYear();
+
+  return `${month}-${day}-${year}`;
+}
+
 function parseFrontMatter(filePath) {
   const content = fs.readFileSync(filePath, "utf8");
   const frontMatterDelimiter = "---";
@@ -39,7 +48,8 @@ const files = fs.readdirSync(directoryPath).map((file) => {
 
   return {
     slug: file.replace(".md", ""),
-    createdAt: fs.statSync(fullPath).birthtime,
+    createdAt: formatDate(fs.statSync(fullPath).birthtime),
+    lastEdited: formatDate(fs.statSync(fullPath).mtime),
     frontMatter: frontMatter,
   };
 });

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { BlogPostSchema } from "../components/post";
 import PostPreview from "../components/post";
+import { PageWrapper } from "../pageWrapper";
 
 export default function Blog() {
   const [posts, setPosts] = useState<BlogPostSchema[]>([]);
@@ -26,12 +27,18 @@ export default function Blog() {
     .map((post) => <PostPreview key={post.slug} {...post} />);
 
   return (
-    <main className="min-h-screen p-28">
+    <main className="min-h-screen py-28 px-2">
       <h1 className="font-semibold text-center text-5xl italic py-6">Blog</h1>
-      <div className="grid grid-cols-1 gap-4 mx-auto max-w-2xl px-6">
-        {postPreviews}
+
+      <div className="grid grid-cols-1 gap-6 mx-auto max-w-2xl px-2">
+        {/* Map black border line over each post */}
+        {postPreviews.map((postPreview) => (
+          <div key={postPreview.key} className="border-l-4 border-black pl-3">
+            {postPreview}
+          </div>
+        ))}
       </div>
-      <h1 className="font-semibold text-center py-6">
+      <h1 className="font-semibold text-center py-8">
         {" "}
         <Link href="/" className=" text-blue-500 hover:underline italic">
           Back to Home

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import CurrentTime from "./components/time";
 import Link from "next/link";
+import { PageWrapper } from "./pageWrapper";
 
 export default function Home() {
   return (
