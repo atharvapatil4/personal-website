@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-28 bg-gradient-radial">
+    <main className="flex min-h-screen flex-col items-center justify-center py-28 px-2 bg-gradient-radial">
       <div className="flex flex-col md:flex-row items-center">
         <div className="overflow-hidden">
           <Image

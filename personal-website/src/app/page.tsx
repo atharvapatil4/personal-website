@@ -6,7 +6,7 @@ import { PageWrapper } from "./pageWrapper";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-radial">
+    <main className="flex min-h-screen flex-col items-center justify-center px-3 bg-gradient-radial">
       <div className="">
         <h1 className="font-semibold text-center text-5xl italic">
           ATHARVA PATIL
