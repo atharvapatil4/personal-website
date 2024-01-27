@@ -33,11 +33,11 @@ const Post = ({ params }: { params: { slug: string } }) => {
     }
   }, [slug]);
 
-  if (!postContent) return <div>Loading...</div>;
+  if (!postContent) return;
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-28 bg-gradient-radial">
-      <div className="text-center">
+      <div className="text-left prose">
         <MDXRemote {...postContent} />
       </div>
     </main>
