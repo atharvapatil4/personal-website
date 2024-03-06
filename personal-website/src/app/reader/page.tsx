@@ -44,6 +44,17 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://medium.com/@dmosyan/doing-microservices-completely-wrong-distributed-monoliths-cede5c44d8a7"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [03/05/24] Doing Microservices Completely Wrong: Distributed
+              Monoliths
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://blog.cloudflare.com/counting-things-a-lot-of-different-things/#fn4"
               className=" hover:underline"
               rel="noopener noreferrer"
@@ -120,6 +131,16 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://pomp.substack.com/p/global-liquidity-is-ready-to-push"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [03/05/24] Global Liquidity Is Ready To Push Assets Higher
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://www.wsj.com/economy/central-banking/what-to-watch-in-fridays-spending-report-a-last-look-at-inflation-before-the-fed-meeting-353665d9?st=0mv2hx1nruvdxvv&reflink=desktopwebshare_permalink"
               className=" hover:underline"
               rel="noopener noreferrer"
@@ -138,6 +159,17 @@ export default function Reader() {
             >
               [01/22/24] Companies rush to bond market in record $150bn debt
               splurge
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.bloomberg.com/opinion/articles/2024-01-19/s-p-500-don-t-let-valuations-new-record-worry-you"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [01/21/24] This Isn’t Your Father’s S&P 500. Don’t Worry About
+              Valuations.
             </Link>
           </li>
           <li>
