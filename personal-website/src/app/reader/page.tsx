@@ -44,6 +44,36 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://www.warpstream.com/blog/dealing-with-rejection-in-distributed-systems"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [08/16/24] Dealing with rejection (in distributed systems)
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=PE4gwstWhmc"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [08/03/24] How We've Scaled Dropbox
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=o_AIw9bGogo"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [08/01/24] The tragedy of systemd
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://medium.com/@dmosyan/doing-microservices-completely-wrong-distributed-monoliths-cede5c44d8a7"
               className=" hover:underline"
               rel="noopener noreferrer"
@@ -129,6 +159,16 @@ export default function Reader() {
         </ul>
         <h1 className="font-semibold">Domestic</h1>
         <ul className="text-xs list-disc pl-4">
+          <li>
+            <Link
+              href="https://www.theatlantic.com/ideas/archive/2024/06/hochul-new-york-congestion-pricing/678621/"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [06/10/24] New York’s Governor Is Inept
+            </Link>
+          </li>
           <li>
             <Link
               href="https://pomp.substack.com/p/global-liquidity-is-ready-to-push"
@@ -239,6 +279,16 @@ export default function Reader() {
         </ul>
         <h1 className="font-semibold">Global</h1>
         <ul className="text-xs list-disc pl-4">
+          <li>
+            <Link
+              href="https://www.newyorker.com/books/page-turner/how-the-talmud-became-a-best-seller-in-south-korea#:~:text=The%20students%20are%20not%20Jewish,addition%20to%20a%20Korean%20one"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [06/10/24] How the Talmud Became a Best-Seller in South Korea
+            </Link>
+          </li>
           <li>
             <Link
               href="https://www.wsj.com/world/china/dont-rule-out-a-financial-crisis-in-china-ed048ef9?st=2oe5pa8rf3pqx5l&reflink=desktopwebshare_permalink"
