@@ -41,16 +41,7 @@ export default function About() {
             >
               books
             </a>
-            , listen to{" "}
-            <a
-              className="text-blue-500 hover:underline"
-              href="https://open.spotify.com/user/22wtxfaxf5obyqlpeo4upxcey"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              music
-            </a>
-            , and watch{" "}
+            , listen to music, and watch{" "}
             <a
               className="text-blue-500 hover:underline"
               href="https://letterboxd.com/atharvapatil/"
