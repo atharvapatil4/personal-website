@@ -44,6 +44,16 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://www.zachdaniel.dev/p/llms-and-elixir-windfall-or-deathblow"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [06/01/24] LLMs & Elixir: Windfall or Deathblow?
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://www.warpstream.com/blog/dealing-with-rejection-in-distributed-systems"
               className=" hover:underline"
               rel="noopener noreferrer"
@@ -123,7 +133,7 @@ export default function Reader() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              [09/13/23] Why Nvidia’s AI Supremacy is Only Temporary
+              [09/13/23] Why Nvidia's AI Supremacy is Only Temporary
             </Link>
           </li>
           <li>
@@ -166,7 +176,7 @@ export default function Reader() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              [06/10/24] New York’s Governor Is Inept
+              [06/10/24] New York's Governor Is Inept
             </Link>
           </li>
           <li>
@@ -208,7 +218,7 @@ export default function Reader() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              [01/21/24] This Isn’t Your Father’s S&P 500. Don’t Worry About
+              [01/21/24] This Isn't Your Father's S&P 500. Don't Worry About
               Valuations.
             </Link>
           </li>
