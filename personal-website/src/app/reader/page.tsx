@@ -44,12 +44,22 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://ryhl.io/blog/actors-with-tokio/"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [06/13/25] Actor Model in Rust with Tokio
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://www.zachdaniel.dev/p/llms-and-elixir-windfall-or-deathblow"
               className=" hover:underline"
               rel="noopener noreferrer"
               target="_blank"
             >
-              [06/01/24] LLMs & Elixir: Windfall or Deathblow?
+              [06/05/25] LLMs & Elixir: Windfall or Deathblow?
             </Link>
           </li>
           <li>
