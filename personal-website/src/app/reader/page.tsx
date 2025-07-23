@@ -10,6 +10,17 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://arxiv.org/html/2401.11181v1"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [07/23/25] Inference without Interference: Disaggregate LLM
+              Inference for Mixed Downstream Workloads
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://arxiv.org/pdf/1603.09320.pdf"
               className=" hover:underline"
               rel="noopener noreferrer"
@@ -396,6 +407,26 @@ export default function Reader() {
         </ul>
         <h1 className="font-semibold">Lectures</h1>
         <ul className="text-xs list-disc pl-4">
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=PcvxdWJOyUE"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [07/23/25] Accelerating LLM Inference with vLLM (and SGLang)
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=5ZlavKF_98U"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [07/23/25] Fast LLM Serving with vLLM and PagedAttention
+            </Link>
+          </li>
           <li>
             <Link
               href="https://www.youtube.com/watch?v=7PdJ9TAdTdA&t=4894s"
