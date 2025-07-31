@@ -1,6 +1,6 @@
 ---
 title: Variety testing Markdown
-description: This contains all sorts of Markdown syntax. I did not write this.
+description: This contains all sorts of Markdown syntax.
 date: 01-26-24
 lastEdited: 01-26-24
 ---
