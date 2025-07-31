@@ -55,6 +55,17 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://www.hebbia.com/blog/maximizer-hebbias-distributed-system-for-high-scale-llm-request-scheduling"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [07/30/25] Maximizer: Hebbia’s Distributed System for High-Scale
+              LLM Request Scheduling
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://ryhl.io/blog/actors-with-tokio/"
               className=" hover:underline"
               rel="noopener noreferrer"
