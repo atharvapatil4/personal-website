@@ -53,7 +53,7 @@ export default function Reader() {
         </ul>
         <h1 className="font-semibold">Engineering</h1>
         <ul className="text-xs list-disc pl-4">
-          <li>
+          {/* <li>
             <Link
               href="https://www.hebbia.com/blog/maximizer-hebbias-distributed-system-for-high-scale-llm-request-scheduling"
               className=" hover:underline"
@@ -63,7 +63,7 @@ export default function Reader() {
               [07/30/25] Maximizer: Hebbia’s Distributed System for High-Scale
               LLM Request Scheduling
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               href="https://ryhl.io/blog/actors-with-tokio/"
