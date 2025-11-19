@@ -10,6 +10,16 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://hao-ai-lab.github.io/blogs/distserve/"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [08/16/25] DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://arxiv.org/html/2401.11181v1"
               className=" hover:underline"
               rel="noopener noreferrer"
@@ -55,6 +65,46 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://x.com/RampLabs/status/1985442169445105753"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [11/18/25] Post Training Ensemble vs. Singular Model Approaches with Tinker
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://cursor.com/blog/tab-rl"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [09/12/25] Improving Cursor Tab with online RL
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.shloked.com/writing/claude-memory"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [09/11/25] Claude Memory: A Different Philosophy
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.scylladb.com/2020/05/05/how-io_uring-and-ebpf-will-revolutionize-programming-in-linux/"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [09/06/25] How io_uring and eBPF Will Revolutionize Programming in Linux
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://ryhl.io/blog/actors-with-tokio/"
               className=" hover:underline"
               rel="noopener noreferrer"
@@ -81,26 +131,6 @@ export default function Reader() {
               target="_blank"
             >
               [08/16/24] Dealing with rejection (in distributed systems)
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://www.youtube.com/watch?v=PE4gwstWhmc"
-              className=" hover:underline"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              [08/03/24] How We've Scaled Dropbox
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://www.youtube.com/watch?v=o_AIw9bGogo"
-              className=" hover:underline"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              [08/01/24] The tragedy of systemd
             </Link>
           </li>
           <li>
@@ -409,6 +439,16 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://www.youtube.com/watch?v=pHqcHzxx6I8"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [11/14/25] Making GPUs Actually Fast: A Deep Dive into Training Performance
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://www.youtube.com/watch?v=PcvxdWJOyUE"
               className=" hover:underline"
               rel="noopener noreferrer"
@@ -425,6 +465,26 @@ export default function Reader() {
               target="_blank"
             >
               [07/23/25] Fast LLM Serving with vLLM and PagedAttention
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=PE4gwstWhmc"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [08/03/24] How We've Scaled Dropbox
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=o_AIw9bGogo"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [08/01/24] The tragedy of systemd
             </Link>
           </li>
           <li>

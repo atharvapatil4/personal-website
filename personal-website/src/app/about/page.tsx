@@ -20,35 +20,22 @@ export default function About() {
         <div className="text-center">
           <br></br>
           <h1>
-            My name is Atharva Patil and I currently work on the Core
-            Infrastructure team at Hive AI in San Francisco. My current
-            interests are in vector search, data-related systems (databases and
-            big data infrastructure) and large-scale (microservice)
+            My name is Atharva Patil and I currently work on the Machine Learning Platform
+            team at DoorDash in New York City. My current
+            interests are in LLM inference, training infrastructure,
+            big data systems, and large-scale (microservice)
             applications.
           </h1>
           <br />
           <h1>
-            In my free time, I like to read{" "}
-            <a className="text-blue-500 hover:underline" href="/reader">
-              articles
-            </a>
-            {" + "}
-            <a
-              className="text-blue-500 hover:underline"
-              href="https://www.goodreads.com/user/show/127860151-atharva-patil"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              books
-            </a>
-            , listen to music, and watch{" "}
+            In my free time I enjoy reading, listening to music, and watching&nbsp;
             <a
               className="text-blue-500 hover:underline"
               href="https://letterboxd.com/atharvapatil/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              movies
+               movies
             </a>
             .
           </h1>
