@@ -10,6 +10,16 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://arxiv.org/pdf/1912.01703"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [11/19/25] PyTorch: An Imperative Style, High-Performance Deep Learning Library
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://hao-ai-lab.github.io/blogs/distserve/"
               className=" hover:underline"
               rel="noopener noreferrer"
