@@ -5,11 +5,11 @@ import Link from "next/link";
 
 export default function Reader() {
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({
-    papers: true,
-    engineering: true,
-    domestic: true,
-    global: true,
-    lectures: true,
+    papers: false,
+    engineering: false,
+    domestic: false,
+    global: false,
+    lectures: false,
   });
 
   const toggleSection = (section: string) => {
