@@ -75,6 +75,26 @@ export default function Reader() {
         <ul className="text-xs list-disc pl-4">
           <li>
             <Link
+              href="https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [11/20/25] FineWeb: decanting the web for the finest text data at scale
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://zdevito.github.io/2022/08/04/cuda-caching-allocator.html"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [11/20/25] A guide to PyTorch's CUDA Caching Allocator
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://x.com/RampLabs/status/1985442169445105753"
               className=" hover:underline"
               rel="noopener noreferrer"
