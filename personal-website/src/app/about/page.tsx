@@ -6,14 +6,15 @@ export default function About() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-gradient-radial py-8">
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 max-w-6xl mx-auto px-4 md:px-8">
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 w-[300px] md:w-[400px]">
           <Image
             src="/profile_pic.png"
             alt="Atharva Patil"
-            className="rounded-md w-[300px] h-[300px] md:w-[400px] md:h-[400px]"
+            className="rounded-md"
             width={400}
             height={400}
             priority
+            style={{ width: '100%', height: 'auto' }}
           />
         </div>
 
