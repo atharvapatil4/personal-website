@@ -18,7 +18,7 @@ export default function Reader() {
 
   return (
     <main className="flex justify-center min-h-screen p-4 bg-gradient-radial">
-      <div className="flex flex-col">
+      <div className="flex flex-col w-full max-w-4xl">
         <h1 
           className="font-semibold cursor-pointer flex items-center gap-2 select-none"
           onClick={() => toggleSection("papers")}

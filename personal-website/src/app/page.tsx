@@ -23,8 +23,7 @@ export default function Home() {
         <br></br>
 
         <div className="text-center">
-          <CurrentTime />
-          <br></br>
+          <p className="italic">📍 POLK ST, RUSSIAN HILL - SAN FRANCISCO</p>
           <br></br>
           <Link href="/about" className=" text-blue-500 hover:underline">
             about
