@@ -4,20 +4,20 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-gradient-radial">
-      <div className="flex items-center gap-12 max-w-6xl mx-auto px-8">
+    <main className="flex min-h-screen items-center justify-center bg-gradient-radial py-8">
+      <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 max-w-6xl mx-auto px-4 md:px-8">
         <div className="flex-shrink-0">
           <Image
             src="/profile_pic.png"
             alt="Atharva Patil"
-            className="rounded-md"
+            className="rounded-md w-[300px] h-[300px] md:w-[400px] md:h-[400px]"
             width={400}
             height={400}
             priority
           />
         </div>
 
-        <div className="flex flex-col gap-6 max-w-2xl">
+        <div className="flex flex-col gap-6 max-w-2xl text-center md:text-left">
           <h1 className="text-lg leading-relaxed">
             My name is Atharva Patil and I currently work on the Machine Learning Platform
             team at DoorDash in New York City. My current
@@ -39,7 +39,7 @@ export default function About() {
             .
           </h1>
           
-          <h1 className="font-semibold mt-4 text-center">
+          <h1 className="font-semibold mt-4 text-center md:text-center">
             <Link href="/" className="text-blue-500 hover:underline italic">
               Back to Home
             </Link>
