@@ -1,13 +1,38 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 
 export default function Reader() {
+  const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({
+    papers: true,
+    engineering: true,
+    domestic: true,
+    global: true,
+    lectures: true,
+  });
+
+  const toggleSection = (section: string) => {
+    setExpandedSections((prev) => ({ ...prev, [section]: !prev[section] }));
+  };
+
   return (
     <main className="flex justify-center min-h-screen p-4 bg-gradient-radial">
       <div className="flex flex-col">
-        <h1 className="font-semibold">Papers</h1>
-        <ul className="text-xs list-disc pl-4">
+        <h1 
+          className="font-semibold cursor-pointer flex items-center gap-2 select-none"
+          onClick={() => toggleSection("papers")}
+        >
+          <span className={`transition-transform duration-300 ${expandedSections.papers ? "rotate-90" : ""}`}>
+            &gt;
+          </span>
+          Papers
+        </h1>
+        <ul 
+          className={`text-xs list-disc pl-4 ${
+            expandedSections.papers ? "" : "hidden"
+          }`}
+        >
           <li>
             <Link
               href="https://arxiv.org/pdf/1912.01703"
@@ -71,8 +96,20 @@ export default function Reader() {
             </Link>
           </li>
         </ul>
-        <h1 className="font-semibold">Engineering</h1>
-        <ul className="text-xs list-disc pl-4">
+        <h1 
+          className="font-semibold cursor-pointer flex items-center gap-2 select-none"
+          onClick={() => toggleSection("engineering")}
+        >
+          <span className={`transition-transform duration-300 ${expandedSections.engineering ? "rotate-90" : ""}`}>
+            &gt;
+          </span>
+          Engineering
+        </h1>
+        <ul 
+          className={`text-xs list-disc pl-4 ${
+            expandedSections.engineering ? "" : "hidden"
+          }`}
+        >
           <li>
             <Link
               href="https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1"
@@ -248,8 +285,20 @@ export default function Reader() {
             </Link>
           </li>
         </ul>
-        <h1 className="font-semibold">Domestic</h1>
-        <ul className="text-xs list-disc pl-4">
+        <h1 
+          className="font-semibold cursor-pointer flex items-center gap-2 select-none"
+          onClick={() => toggleSection("domestic")}
+        >
+          <span className={`transition-transform duration-300 ${expandedSections.domestic ? "rotate-90" : ""}`}>
+            &gt;
+          </span>
+          Domestic
+        </h1>
+        <ul 
+          className={`text-xs list-disc pl-4 ${
+            expandedSections.domestic ? "" : "hidden"
+          }`}
+        >
           <li>
             <Link
               href="https://www.theatlantic.com/ideas/archive/2024/06/hochul-new-york-congestion-pricing/678621/"
@@ -368,8 +417,20 @@ export default function Reader() {
             </Link>
           </li>
         </ul>
-        <h1 className="font-semibold">Global</h1>
-        <ul className="text-xs list-disc pl-4">
+        <h1 
+          className="font-semibold cursor-pointer flex items-center gap-2 select-none"
+          onClick={() => toggleSection("global")}
+        >
+          <span className={`transition-transform duration-300 ${expandedSections.global ? "rotate-90" : ""}`}>
+            &gt;
+          </span>
+          Global
+        </h1>
+        <ul 
+          className={`text-xs list-disc pl-4 ${
+            expandedSections.global ? "" : "hidden"
+          }`}
+        >
           <li>
             <Link
               href="https://www.newyorker.com/books/page-turner/how-the-talmud-became-a-best-seller-in-south-korea#:~:text=The%20students%20are%20not%20Jewish,addition%20to%20a%20Korean%20one"
@@ -465,8 +526,20 @@ export default function Reader() {
             </Link>
           </li>
         </ul>
-        <h1 className="font-semibold">Lectures</h1>
-        <ul className="text-xs list-disc pl-4">
+        <h1 
+          className="font-semibold cursor-pointer flex items-center gap-2 select-none"
+          onClick={() => toggleSection("lectures")}
+        >
+          <span className={`transition-transform duration-300 ${expandedSections.lectures ? "rotate-90" : ""}`}>
+            &gt;
+          </span>
+          Lectures
+        </h1>
+        <ul 
+          className={`text-xs list-disc pl-4 ${
+            expandedSections.lectures ? "" : "hidden"
+          }`}
+        >
           <li>
             <Link
               href="https://www.youtube.com/watch?v=pHqcHzxx6I8"
