@@ -112,22 +112,22 @@ export default function Reader() {
         >
           <li>
             <Link
+              href="https://zdevito.github.io/2022/08/04/cuda-caching-allocator.html"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [02/14/26] A guide to PyTorch's CUDA Caching Allocator
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1"
               className=" hover:underline"
               rel="noopener noreferrer"
               target="_blank"
             >
               [11/20/25] FineWeb: decanting the web for the finest text data at scale
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://zdevito.github.io/2022/08/04/cuda-caching-allocator.html"
-              className=" hover:underline"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              [11/20/25] A guide to PyTorch's CUDA Caching Allocator
             </Link>
           </li>
           <li>
@@ -540,6 +540,16 @@ export default function Reader() {
             expandedSections.lectures ? "" : "hidden"
           }`}
         >
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=rX1ar5lcZy4"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [02/14/26] Monarch: A Distributed Execution Engine for PyTorch
+            </Link>
+          </li>
           <li>
             <Link
               href="https://www.youtube.com/watch?v=pHqcHzxx6I8"
