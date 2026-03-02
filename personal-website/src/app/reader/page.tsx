@@ -5,11 +5,11 @@ import Link from "next/link";
 
 export default function Reader() {
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({
-    papers: false,
-    engineering: false,
-    domestic: false,
-    global: false,
-    lectures: false,
+    papers: true,
+    engineering: true,
+    domestic: true,
+    global: true,
+    lectures: true,
   });
 
   const toggleSection = (section: string) => {
@@ -285,7 +285,123 @@ export default function Reader() {
             </Link>
           </li>
         </ul>
-        <h1 
+        <h1
+          className="font-semibold cursor-pointer flex items-center gap-2 select-none"
+          onClick={() => toggleSection("lectures")}
+        >
+          <span className={`transition-transform duration-300 ${expandedSections.lectures ? "rotate-90" : ""}`}>
+            &gt;
+          </span>
+          Lectures
+        </h1>
+        <ul
+          className={`text-xs list-disc pl-4 ${
+            expandedSections.lectures ? "" : "hidden"
+          }`}
+        >
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=139UPjoq7Kw"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [03/01/26] Building Machine Learning Systems for a Trillion Trillion Floating Point Operations
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=rX1ar5lcZy4"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [02/14/26] Monarch: A Distributed Execution Engine for PyTorch
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=pHqcHzxx6I8"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [11/14/25] Making GPUs Actually Fast: A Deep Dive into Training Performance
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=PcvxdWJOyUE"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [07/23/25] Accelerating LLM Inference with vLLM (and SGLang)
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=5ZlavKF_98U"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [07/23/25] Fast LLM Serving with vLLM and PagedAttention
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=PE4gwstWhmc"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [08/03/24] How We've Scaled Dropbox
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=o_AIw9bGogo"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [08/01/24] The tragedy of systemd
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=7PdJ9TAdTdA&t=4894s"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [10/11/23] Noam Chomsky on Modern-Day American Imperalism: Middle
+              East and Beyond
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=w_X5czMVKT8"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [10/11/23] Noam Chomsky on Power and Ideology
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.youtube.com/watch?v=3dtqt0bXb4Y"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [10/09/23] Yale ENGL 291: Thomas Pynchon, The Crying of Lot 49
+            </Link>
+          </li>
+        </ul>
+        <h1
           className="font-semibold cursor-pointer flex items-center gap-2 select-none"
           onClick={() => toggleSection("domestic")}
         >
@@ -294,7 +410,7 @@ export default function Reader() {
           </span>
           Domestic
         </h1>
-        <ul 
+        <ul
           className={`text-xs list-disc pl-4 ${
             expandedSections.domestic ? "" : "hidden"
           }`}
@@ -417,7 +533,7 @@ export default function Reader() {
             </Link>
           </li>
         </ul>
-        <h1 
+        <h1
           className="font-semibold cursor-pointer flex items-center gap-2 select-none"
           onClick={() => toggleSection("global")}
         >
@@ -426,7 +542,7 @@ export default function Reader() {
           </span>
           Global
         </h1>
-        <ul 
+        <ul
           className={`text-xs list-disc pl-4 ${
             expandedSections.global ? "" : "hidden"
           }`}
@@ -523,112 +639,6 @@ export default function Reader() {
               target="_blank"
             >
               [08/29/23] Germany is Losing its Mojo
-            </Link>
-          </li>
-        </ul>
-        <h1 
-          className="font-semibold cursor-pointer flex items-center gap-2 select-none"
-          onClick={() => toggleSection("lectures")}
-        >
-          <span className={`transition-transform duration-300 ${expandedSections.lectures ? "rotate-90" : ""}`}>
-            &gt;
-          </span>
-          Lectures
-        </h1>
-        <ul 
-          className={`text-xs list-disc pl-4 ${
-            expandedSections.lectures ? "" : "hidden"
-          }`}
-        >
-          <li>
-            <Link
-              href="https://www.youtube.com/watch?v=rX1ar5lcZy4"
-              className=" hover:underline"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              [02/14/26] Monarch: A Distributed Execution Engine for PyTorch
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://www.youtube.com/watch?v=pHqcHzxx6I8"
-              className=" hover:underline"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              [11/14/25] Making GPUs Actually Fast: A Deep Dive into Training Performance
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://www.youtube.com/watch?v=PcvxdWJOyUE"
-              className=" hover:underline"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              [07/23/25] Accelerating LLM Inference with vLLM (and SGLang)
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://www.youtube.com/watch?v=5ZlavKF_98U"
-              className=" hover:underline"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              [07/23/25] Fast LLM Serving with vLLM and PagedAttention
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://www.youtube.com/watch?v=PE4gwstWhmc"
-              className=" hover:underline"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              [08/03/24] How We've Scaled Dropbox
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://www.youtube.com/watch?v=o_AIw9bGogo"
-              className=" hover:underline"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              [08/01/24] The tragedy of systemd
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://www.youtube.com/watch?v=7PdJ9TAdTdA&t=4894s"
-              className=" hover:underline"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              [10/11/23] Noam Chomsky on Modern-Day American Imperalism: Middle
-              East and Beyond
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://www.youtube.com/watch?v=w_X5czMVKT8"
-              className=" hover:underline"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              [10/11/23] Noam Chomsky on Power and Ideology
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://www.youtube.com/watch?v=3dtqt0bXb4Y"
-              className=" hover:underline"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              [10/09/23] Yale ENGL 291: Thomas Pynchon, The Crying of Lot 49
             </Link>
           </li>
         </ul>
