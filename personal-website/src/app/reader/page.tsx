@@ -311,6 +311,16 @@ export default function Reader() {
           </li>
           <li>
             <Link
+              href="https://www.youtube.com/watch?v=8Ab3ArE8W3s"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [02/27/26] Stop Writing Dead Programs
+            </Link>
+          </li>
+          <li>
+            <Link
               href="https://www.youtube.com/watch?v=rX1ar5lcZy4"
               className=" hover:underline"
               rel="noopener noreferrer"
