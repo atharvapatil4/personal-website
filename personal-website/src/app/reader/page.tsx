@@ -4,7 +4,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 export default function Reader() {
-  const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({
+  const [expandedSections, setExpandedSections] = useState<
+    Record<string, boolean>
+  >({
     papers: true,
     engineering: true,
     domestic: true,
@@ -19,16 +21,18 @@ export default function Reader() {
   return (
     <main className="flex justify-center min-h-screen p-4 bg-gradient-radial">
       <div className="flex flex-col w-full max-w-4xl">
-        <h1 
+        <h1
           className="font-semibold cursor-pointer flex items-center gap-2 select-none"
           onClick={() => toggleSection("papers")}
         >
-          <span className={`transition-transform duration-300 ${expandedSections.papers ? "rotate-90" : ""}`}>
+          <span
+            className={`transition-transform duration-300 ${expandedSections.papers ? "rotate-90" : ""}`}
+          >
             &gt;
           </span>
           Papers
         </h1>
-        <ul 
+        <ul
           className={`text-xs list-disc pl-4 ${
             expandedSections.papers ? "" : "hidden"
           }`}
@@ -40,7 +44,8 @@ export default function Reader() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              [11/19/25] PyTorch: An Imperative Style, High-Performance Deep Learning Library
+              [11/19/25] PyTorch: An Imperative Style, High-Performance Deep
+              Learning Library
             </Link>
           </li>
           <li>
@@ -50,7 +55,8 @@ export default function Reader() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              [08/16/25] DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving
+              [08/16/25] DistServe: Disaggregating Prefill and Decoding for
+              Goodput-optimized Large Language Model Serving
             </Link>
           </li>
           <li>
@@ -96,20 +102,32 @@ export default function Reader() {
             </Link>
           </li>
         </ul>
-        <h1 
+        <h1
           className="font-semibold cursor-pointer flex items-center gap-2 select-none"
           onClick={() => toggleSection("engineering")}
         >
-          <span className={`transition-transform duration-300 ${expandedSections.engineering ? "rotate-90" : ""}`}>
+          <span
+            className={`transition-transform duration-300 ${expandedSections.engineering ? "rotate-90" : ""}`}
+          >
             &gt;
           </span>
           Engineering
         </h1>
-        <ul 
+        <ul
           className={`text-xs list-disc pl-4 ${
             expandedSections.engineering ? "" : "hidden"
           }`}
         >
+          <li>
+            <Link
+              href="https://thinkingmachines.ai/blog/on-policy-distillation/"
+              className=" hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              [07/03/2026] On-Policy Distillation
+            </Link>
+          </li>
           <li>
             <Link
               href="https://zdevito.github.io/2022/08/04/cuda-caching-allocator.html"
@@ -127,7 +145,8 @@ export default function Reader() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              [11/20/25] FineWeb: decanting the web for the finest text data at scale
+              [11/20/25] FineWeb: decanting the web for the finest text data at
+              scale
             </Link>
           </li>
           <li>
@@ -137,7 +156,8 @@ export default function Reader() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              [11/18/25] Post Training Ensemble vs. Singular Model Approaches with Tinker
+              [11/18/25] Post Training Ensemble vs. Singular Model Approaches
+              with Tinker
             </Link>
           </li>
           <li>
@@ -167,7 +187,8 @@ export default function Reader() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              [09/06/25] How io_uring and eBPF Will Revolutionize Programming in Linux
+              [09/06/25] How io_uring and eBPF Will Revolutionize Programming in
+              Linux
             </Link>
           </li>
           <li>
@@ -289,7 +310,9 @@ export default function Reader() {
           className="font-semibold cursor-pointer flex items-center gap-2 select-none"
           onClick={() => toggleSection("lectures")}
         >
-          <span className={`transition-transform duration-300 ${expandedSections.lectures ? "rotate-90" : ""}`}>
+          <span
+            className={`transition-transform duration-300 ${expandedSections.lectures ? "rotate-90" : ""}`}
+          >
             &gt;
           </span>
           Lectures
@@ -306,7 +329,8 @@ export default function Reader() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              [03/01/26] Building Machine Learning Systems for a Trillion Trillion Floating Point Operations
+              [03/01/26] Building Machine Learning Systems for a Trillion
+              Trillion Floating Point Operations
             </Link>
           </li>
           <li>
@@ -336,7 +360,8 @@ export default function Reader() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              [11/14/25] Making GPUs Actually Fast: A Deep Dive into Training Performance
+              [11/14/25] Making GPUs Actually Fast: A Deep Dive into Training
+              Performance
             </Link>
           </li>
           <li>
@@ -415,7 +440,9 @@ export default function Reader() {
           className="font-semibold cursor-pointer flex items-center gap-2 select-none"
           onClick={() => toggleSection("domestic")}
         >
-          <span className={`transition-transform duration-300 ${expandedSections.domestic ? "rotate-90" : ""}`}>
+          <span
+            className={`transition-transform duration-300 ${expandedSections.domestic ? "rotate-90" : ""}`}
+          >
             &gt;
           </span>
           Domestic
@@ -547,7 +574,9 @@ export default function Reader() {
           className="font-semibold cursor-pointer flex items-center gap-2 select-none"
           onClick={() => toggleSection("global")}
         >
-          <span className={`transition-transform duration-300 ${expandedSections.global ? "rotate-90" : ""}`}>
+          <span
+            className={`transition-transform duration-300 ${expandedSections.global ? "rotate-90" : ""}`}
+          >
             &gt;
           </span>
           Global
