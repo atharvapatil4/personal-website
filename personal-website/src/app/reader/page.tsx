@@ -151,7 +151,7 @@ export default function Reader() {
           </li>
           <li>
             <Link
-              href="https://x.com/RampLabs/status/1985442169445105753"
+              href="https://xcancel.com/i/article/1985442169445105753"
               className=" hover:underline"
               rel="noopener noreferrer"
               target="_blank"
