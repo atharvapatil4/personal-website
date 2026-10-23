@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Atharva Patil",
   description: "Atharva's personal website",
-  themeColor: "#f4f1ea",
+  themeColor: "#d6dbdc",
 };
 
 export default function RootLayout({

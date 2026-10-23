@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <main className="flex flex-col items-center justify-center px-4 py-12">
       <div className="text-center max-w-md">
-        <div className="frame w-full h-[300px] overflow-hidden mx-auto mb-8 bg-[var(--paper)]">
+        <div className="frame w-full h-[300px] overflow-hidden mx-auto mb-8">
           <AsciiCube />
         </div>
         <p>Feel free to contact me for any opportunities or questions.</p>
