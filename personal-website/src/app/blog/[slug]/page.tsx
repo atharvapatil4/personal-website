@@ -58,43 +58,41 @@ export default async function Post({ params }: { params: { slug: string } }) {
     const readingLength = getReadingLength(matterResult.content);
 
     return (
-      <main className="min-h-screen flex flex-col items-center py-28 px-2 text-left">
-        <div className="text-center">
-          <h1 className="text-5xl font-semibold py-2">
+      <main className="flex flex-col items-center py-12 px-4 text-left">
+        <div className="text-center max-w-2xl">
+          <h1 className="text-4xl font-semibold py-2">
             {matterResult.data.title}
           </h1>
-          <p className="text-xl">{matterResult.data.description}</p>
-          <div className="flex justify-center space-x-8 mt-2 italic">
-            <p className="text-slate-400">published {matterResult.data.date}</p>
-            <p className="text-slate-400">
+          <p className="text-lg">{matterResult.data.description}</p>
+          <div className="flex flex-wrap justify-center gap-x-8 mt-2 italic">
+            <p className="text-[var(--muted)]">
+              published {matterResult.data.date}
+            </p>
+            <p className="text-[var(--muted)]">
               last edited {matterResult.data.lastEdited}
             </p>
           </div>
-          <p className="text-slate-400 italic">
+          <p className="text-[var(--muted)] italic">
             average reading time {readingLength} minutes
           </p>
         </div>
-        <hr className="prose my-4 w-full border-black" />
-        <div className="prose text-left">
+        <hr className="my-6 w-full max-w-prose border-[var(--ink)]" />
+        <div className="prose text-left max-w-prose">
           <MDXRemote source={matterResult.content} />
         </div>
-        <br></br>
-        <h1 className="font-semibold">
-          <Link
-            href="/blog"
-            className="p-28 text-blue-500 hover:underline italic"
-          >
+        <p className="font-semibold py-10">
+          <Link href="/blog" className="italic">
             Back to All Posts
           </Link>
-        </h1>
+        </p>
       </main>
     );
   } catch (error) {
     return (
-      <main className="min-h-screen flex flex-col items-center py-28 px-2">
+      <main className="flex flex-col items-center py-16 px-4">
         <h1 className="text-3xl">Post not found</h1>
         <p>The requested blog post could not be found.</p>
-        <Link href="/blog" className="text-blue-500 hover:underline mt-4">
+        <Link href="/blog" className="mt-4 italic">
           Back to All Posts
         </Link>
       </main>

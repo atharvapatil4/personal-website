@@ -19,8 +19,8 @@ export default function Reader() {
   };
 
   return (
-    <main className="flex justify-center min-h-screen p-4 bg-gradient-radial">
-      <div className="flex flex-col w-full max-w-4xl">
+    <main className="flex justify-center p-4 py-10">
+      <div className="flex flex-col w-full max-w-4xl gap-1">
         <h1
           className="font-semibold cursor-pointer flex items-center gap-2 select-none"
           onClick={() => toggleSection("papers")}
@@ -681,13 +681,6 @@ export default function Reader() {
             </Link>
           </li>
         </ul>
-        <br></br>
-        <h1 className="font-semibold text-center">
-          {" "}
-          <Link href="/" className=" text-blue-500 hover:underline italic">
-            Back to Home
-          </Link>
-        </h1>
       </div>
     </main>
   );

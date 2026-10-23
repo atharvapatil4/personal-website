@@ -1,46 +1,20 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
 import Image from "next/image";
-import CurrentTime from "./components/time";
-import Link from "next/link";
-import { PageWrapper } from "./pageWrapper";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center px-3 bg-gradient-radial">
-      <div className="">
-        <h1 className="font-semibold text-center text-5xl italic">
-          ATHARVA PATIL
-        </h1>
-        <br></br>
+    <main className="flex flex-col items-center justify-center px-4 py-16">
+      <div className="max-w-[500px] w-full">
         <Image
           src="/sf2.jpeg"
           alt="sf"
-          className="rounded-md"
+          className="frame w-full h-auto"
           width={500}
           height={400}
           priority
         />
-        <br></br>
-
-        <div className="text-center">
-          <p className="italic">📍 POLK ST, RUSSIAN HILL - SAN FRANCISCO</p>
-          <br></br>
-          <Link href="/about" className=" text-blue-500 hover:underline">
-            about
-          </Link>
-          {" // "}
-          <Link href="/reader" className="text-blue-500 hover:underline">
-            reader
-          </Link>
-          {" // "}
-          <Link href="/blog" className="text-blue-500 hover:underline">
-            blog
-          </Link>
-          {" // "}
-          <Link href="/contact" className="text-blue-500 hover:underline">
-            contact
-          </Link>
-        </div>
+        <p className="mt-4 text-center italic text-sm">
+          📍 POLK ST, RUSSIAN HILL - SAN FRANCISCO
+        </p>
       </div>
     </main>
   );
