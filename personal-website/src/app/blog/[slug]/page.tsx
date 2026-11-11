@@ -4,6 +4,12 @@ import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
 import { Metadata } from "next";
+import { Source_Serif_4 } from "next/font/google";
+
+const serif = Source_Serif_4({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+});
 
 // Calculate reading time
 function getReadingLength(content: string) {
@@ -77,7 +83,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
           </p>
         </div>
         <hr className="my-6 w-full max-w-prose border-[var(--ink)]" />
-        <div className="prose text-left max-w-prose">
+        <div className={`prose text-left max-w-prose ${serif.className}`}>
           <MDXRemote source={matterResult.content} />
         </div>
         <p className="font-semibold py-10">

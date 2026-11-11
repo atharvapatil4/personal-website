@@ -12,8 +12,8 @@ export default function Home() {
           height={400}
           priority
         />
-        <p className="mt-4 text-center italic text-sm">
-          📍 POLK ST, RUSSIAN HILL - SAN FRANCISCO
+        <p className="fig-caption">
+          <b>fig. 1</b> — Polk St, Russian Hill, San Francisco
         </p>
       </div>
     </main>

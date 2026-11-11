@@ -8,6 +8,7 @@
   --sky: #d6dbdc;
   --muted: #5c5c5c;
   --link: #0000ee;
+  --visited: #551a8b;
   --rule: #111111;
 }
 
@@ -41,7 +42,17 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+}
+
+.page a:visited {
+  color: var(--visited);
+}
+
+.page a:visited:hover {
+  color: var(--paper);
 }
 
 a:focus-visible {
@@ -90,10 +101,6 @@ a:focus-visible {
   text-decoration: none;
 }
 
-.site-nav a:hover {
-  text-decoration: underline;
-}
-
 .site-nav a.is-active {
   background: var(--ink);
   color: var(--paper);
@@ -118,6 +125,68 @@ a:focus-visible {
   border: 2px solid var(--rule);
   border-radius: 0;
   display: block;
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.fig-caption {
+  margin-top: 1.1rem;
+  font-size: 0.8rem;
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.fig-caption b {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.reader-section + .reader-section {
+  margin-top: 1.75rem;
+}
+
+.reader-toggle {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  border-bottom: 2px solid var(--rule);
+  width: 100%;
+  padding-bottom: 0.2rem;
+  text-align: left;
+}
+
+.reader-sign {
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+
+.reader-count {
+  margin-left: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.reader-list {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.reader-list li {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.75rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px dotted var(--muted);
+}
+
+.reader-date {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
 }
 
 .page {

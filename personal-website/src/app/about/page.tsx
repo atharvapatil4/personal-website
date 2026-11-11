@@ -15,26 +15,26 @@ export default function About() {
             priority
             style={{ width: "100%", height: "auto" }}
           />
+          <p className="fig-caption">
+            <b>fig. 2</b> — the author, Paris
+          </p>
         </div>
 
         <div className="flex flex-col gap-6 max-w-2xl text-center md:text-left">
           <p className="text-lg leading-relaxed">
-            My name is Atharva Patil and I currently work on the Machine Learning
-            Platform team at DoorDash in New York City. My current interests are
-            in LLM inference, training infrastructure, big data systems, and
-            large-scale (microservice) applications.
+            I currently work on the engineering team at{" "}
+            <a href="https://x.ai" rel="noopener noreferrer" target="_blank">
+              x.ai
+            </a>{" "}
+            (formerly Cursor). My ongoing interests involve building and
+            optimizing LLM inference and large-scale serving applications. In
+            the past I have worked on distributed training infrastructure,
+            vector search, and some product engineering.
           </p>
 
           <p className="text-lg leading-relaxed">
-            In my free time I enjoy reading, listening to music, and watching&nbsp;
-            <a
-              href="https://letterboxd.com/atharvapatil/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              movies
-            </a>
-            .
+            In my free time I enjoy reading, listening to music, and watching
+            movies.
           </p>
         </div>
       </div>
