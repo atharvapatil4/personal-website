@@ -3,30 +3,227 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --ink: #111111;
+  --paper: #ffffff;
+  --sky: #d6dbdc;
+  --muted: #5c5c5c;
+  --link: #0000ee;
+  --visited: #551a8b;
+  --rule: #111111;
+}
+
+html,
+body {
+  min-height: 100%;
+  color: var(--ink);
+}
+
+html {
+  background: var(--paper);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, var(--paper)) var(--sky);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+a {
+  color: var(--link);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+}
+
+.page a:visited {
+  color: var(--visited);
+}
+
+.page a:visited:hover {
+  color: var(--paper);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+.site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  text-align: center;
+  padding: 2.75rem 1rem 1.25rem;
+  border-bottom: 2px solid var(--rule);
+}
+
+.site-mark {
+  color: var(--ink);
+  font-size: clamp(2.25rem, 7vw, 3.25rem);
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.site-mark:hover {
+  text-decoration: none;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.site-nav {
+  font-size: 1rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+}
+
+.site-nav a.is-active {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0 0.25rem;
+  text-decoration: none;
+}
+
+.nav-sep {
+  color: var(--ink);
+}
+
+.site-time {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.frame {
+  border: 2px solid var(--rule);
+  border-radius: 0;
+  display: block;
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.fig-caption {
+  margin-top: 1.1rem;
+  font-size: 0.8rem;
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.fig-caption b {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.reader-section + .reader-section {
+  margin-top: 1.75rem;
+}
+
+.reader-toggle {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  border-bottom: 2px solid var(--rule);
+  width: 100%;
+  padding-bottom: 0.2rem;
+  text-align: left;
+}
+
+.reader-sign {
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+
+.reader-count {
+  margin-left: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.reader-list {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.reader-list li {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.75rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px dotted var(--muted);
+}
+
+.reader-date {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.page {
+  flex: 1;
+  width: 100%;
+}
+
+.prose {
+  --tw-prose-body: var(--ink);
+  --tw-prose-headings: var(--ink);
+  --tw-prose-links: var(--link);
+  --tw-prose-bold: var(--ink);
+  --tw-prose-quotes: var(--ink);
+  --tw-prose-quote-borders: var(--ink);
+  --tw-prose-hr: var(--ink);
+  --tw-prose-code: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 @layer utilities {
   .perspective-2000 {
     perspective: 2000px;
   }
-  
+
   .preserve-3d {
     transform-style: preserve-3d;
   }
-  
+
   .animate-cube-pop {
     animation: cube-pop 15s ease-in-out infinite;
   }

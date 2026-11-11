@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import Link from "next/link";
 import PostPreview from "../components/post";
 import { BlogPostSchema } from "../components/post";
 import matter from "gray-matter";
@@ -38,21 +37,16 @@ export default async function Blog() {
   });
 
   return (
-    <main className="min-h-screen py-28 px-2">
-      <h1 className="font-semibold text-center text-5xl italic py-6">Blog</h1>
+    <main className="py-12 px-4">
+      <h1 className="font-semibold text-center text-4xl italic py-4">Blog</h1>
 
-      <div className="grid grid-cols-1 gap-6 mx-auto max-w-2xl px-2">
+      <div className="grid grid-cols-1 gap-6 mx-auto max-w-2xl">
         {sortedPosts.map((post) => (
           <div key={post.slug} className="border-l-4 border-black pl-3">
             <PostPreview {...post} />
           </div>
         ))}
       </div>
-      <h1 className="font-semibold text-center py-8">
-        <Link href="/" className="text-blue-500 hover:underline italic">
-          Back to Home
-        </Link>
-      </h1>
     </main>
   );
 }
