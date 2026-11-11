@@ -11,6 +11,15 @@ export const metadata: Metadata = {
   title: "Atharva Patil",
   description: "Atharva's personal website",
   themeColor: "#d6dbdc",
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    noarchive: true,
+    nosnippet: true,
+    noimageindex: true,
+    notranslate: true,
+  },
 };
 
 export default function RootLayout({
